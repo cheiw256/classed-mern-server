@@ -1,7 +1,7 @@
 "use strict";
 const express = require('express');
 let router = express.Router();
-let Exercise = require('./models/exercise.model');
+let Exercise = require('../models/exercise.model');
 
 router.get('/',(req, res) => {
   Exercise.find()
